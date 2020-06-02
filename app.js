@@ -538,11 +538,11 @@ app.get('*', function (req, res) {
 
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 const host = "localhost";
 
 
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT, () => {
 
     console.log('server running on http://' + host + ':' + port + '/');
 });
